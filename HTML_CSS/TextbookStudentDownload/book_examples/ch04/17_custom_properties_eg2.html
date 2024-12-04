@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Custom Properties</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="styles/normalize.css">
+		<style>
+			h1 {
+				color: navy;
+			}
+			h2 {
+				--text-shadow-color: navy;
+				text-shadow: 2px 2px 4px var(--text-shadow-color);
+				color: blue;
+			}
+			h2:hover {
+				--text-shadow-color: red;
+			}
+			body {
+			 	font-size: 87.5%;
+			    margin-left: 2em;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<h1>San Joaquin Valley Town Hall</h1>
+		</header>
+		<main>
+			<p>Welcome to San Joaquin Valley Town Hall.</p>
+			<h2>Speakers</h2>
+            <h2>Ticket packages</h2>
+		</main>    
+	</body>
+</html>

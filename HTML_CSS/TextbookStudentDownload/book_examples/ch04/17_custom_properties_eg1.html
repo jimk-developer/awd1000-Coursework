@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Custom Properties</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="styles/normalize.css">
+		<style>
+			:root {
+				--global-primary-color: #0000ff;
+			}
+			h1 {
+				color: var(--global-primary-color);
+			}
+			nav {
+				margin-bottom: 2em;
+				margin: 0;
+			}
+			nav ul {
+				list-style: none;
+				padding-left: 0;
+			}
+			nav ul li {
+				float: left;
+			}
+			nav ul li a {
+				text-align: center;
+				display: block;
+				width: 175px;
+				padding: 1em 0;      /* padding above and below li elements */
+				text-decoration: none;
+				background-color: var(--global-primary-color);
+				color: white;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<h1>San Joaquin Valley Town Hall</h1>
+		</header>
+    	<nav>
+			<ul>
+				<li><a href="index.html" >Home</a></li>
+				<li><a href="tickets.html" >Get Tickets</a></li> 
+				<li><a href="members.html">Become a Member</a></li> 
+				<li><a href="about_us.html" >About Us</a></li>
+			</ul>
+		</nav>
+	</body>
+</html>
